@@ -16,7 +16,7 @@ namespace Felsökning
             {
                 Console.WriteLine("Talet är större än tre"); // Closing the row by adding ;
             }
-            else if (number < 3) // Ett mellanslag vid else if 
+            else if (number < 3) // Separated else and if so they are two separate words
             {
                 Console.WriteLine("Talet är mindre än tre");
             }
@@ -56,10 +56,12 @@ namespace Felsökning
             
             // Case 5
             int i = 1;
-
+            
             switch (i)
             {
-                // Removed the first case 
+                case 1: // Added a new case so i = 1 doesnt write out Two or Other. 
+                    Console.WriteLine();
+                    break;
                 case 2:
                     Console.WriteLine("Two");
                     break;
@@ -68,7 +70,7 @@ namespace Felsökning
                     break;
             }
             
-
+            
             // Case 6
             int i = 5; // Changed the value of i to 5 instead of 10 to make the if run
 
